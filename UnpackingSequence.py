@@ -4,6 +4,8 @@
 
 # Unpacking works with any objects that happens to be iterable.
 # E.g. tubples, lists, strings, iterators and generator
+# built-in sequence type.
+
 p = (4, 5)
 x, y = p
 print('x = ', x)
