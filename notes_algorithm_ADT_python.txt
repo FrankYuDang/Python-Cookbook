@@ -1,0 +1,51 @@
+Test on Lab Machine. - 17/09/2019
+------------
+Alogorithm - reading 18/09/2019
+Take a problem statement and develop a solution. 
+1.3 what is computer science. 
+a computer scientist's goal is to develope an algorithm, a step-by-step list of instructions for solving any instance of problems that might arise. 
+
+Computer science can be thought of as the study of algorithms.
+computer science is the study of problems that are and that are not computable.
+Solutions are considered independent from the machine. 
+
+The study of abstractions. to separate logical and pysical perspectives.
+These functions are also referred to as the interface. 
+The procedural abstraction
+---------------
+1.4 What is programming?
+Programming is the process of taking an algorithm and encoding it into a notation, a programming language, so that it can be executed by a computer. 
+The important first step is the need to have the solution.
+Without an algorithm, there can be no program.
+Programming is the way we create a represenstation for our solutions.
+Algorithms describe the solutions to a problem in terms of the data needed to represent the problem instance and the set of steps necessary to produce the intended results.
+Programming languages must provide a notational way to reprensent both the process and the data. 
+To this end, language provide control structs and data types. 
+
+Control constructs allow algorithmic steps to be repreneted in a convient yet unambiguous way.
+1) Perform sequential processing; 2) selection for decision-making. 3)iteration for repetitive control. 
+
+data types tajt provide an interpretation for this binary data so that we can think about the data in erms that make sense with respect to the problem being solved. 
+
+data type for integers or provides a desription of the operations. 
+----------------
+1.5 Why study data structures and abstract data types?
+Create models of the problem domain.
+Data abstraction-
+An abstract data type (ADT) is a logical descirption of how we vide the data and the operations that are allowed without regard to how they will be implemented. 
+This level of abstraction, we are creating encapsulation around the data. 
+hiding the details of implementation from user's view. 
+
+The implementation of an abstract data type, often referred to as a data strcuture, will requrie that we provide a physical view of the data using some collections of programming constructs and primitive data types.
+
+Implementation-independent view of data. 
+-----------------
+1.6 Why study algorithm?
+We learn by seeing others solve problems and by solving problems by ourselves. 
+As we learn algorithms, we can learn analysis techniques that allow us to compare and contrast solutions based on solely on their characteristics. 
+-----------------
+1.8 Getting start with data. 
+Data is the focal point of the problem-solving process.
+We define a class to be a description of what the data look like (the state) and what the data can do (the behaviour)
+Classes are analogous to abstract data types because a user of a class only sees the states and behaviour of a data item.
+
