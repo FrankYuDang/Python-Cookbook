@@ -144,9 +144,9 @@ transposed = []
 for i in range(4):
     for row in matrix:
         transposed.append(row(i) for row in matrix)
-        print('i :', i)
-        print("row :", row)
-        print("row(i) :", row[i])
+        # print('i :', i)
+        # print("row :", row)
+        # print("row(i) :", row[i])
         # print("transposed :", transposed[:])
 # is the same as
 transposed = []
@@ -163,6 +163,48 @@ print('tranposed :', transposed)
 zip_matrix = list(zip(*matrix))
 # zip('ABCD', 'xy') --> Ax By
 print('zip_matrix :', zip_matrix)
+
+#----------------------------------
+# 5.2 The del statement. 
+# del can remove slices from a list or clear entire list
+a = [-1, 1, 66.25, 333, 333, 1234.5]
+print('a :', a)
+del a[0]
+print('a :', a)
+del a[2:4]
+print('a :', a)
+del a[:]
+print('a :', a)
+
+
+#----------------------------------
+# Tuples and sequence
+t = 12345, 54321, 'hello!'
+print('t[0] :', t[0])
+print('t :', t)
+# tuple can be nested:
+nested_u = t, (1, 2, 3, 4 ,5)
+print('nested_u :', nested_u)
+print('Tuple is immutable, thus NO t[0] = 8888')
+
+# Tuples vs Lists
+print("""
+Tuples are immutable and contain heterogenesou sequence of elements
+    that are accessed via unpacking or indexing.
+Lists are mutable, and their elements are usually homogeneous
+    and accessed by iterating over the list""")
+
+# Tuple has quirks when 0 or 1
+
+print('# Sequence can be tuple packing and sequence unpacking')
+#-------------------------------------
+# 5.4. Sets.
+# applications - membership testing and elminating duplicate entries.
+# Curly braces or the set()
+
+a = {x for x in 'abracadabra' if x not in 'abc'}
+print(a)
+
 
 
         

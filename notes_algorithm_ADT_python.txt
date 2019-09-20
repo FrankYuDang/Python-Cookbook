@@ -48,4 +48,13 @@ As we learn algorithms, we can learn analysis techniques that allow us to compar
 Data is the focal point of the problem-solving process.
 We define a class to be a description of what the data look like (the state) and what the data can do (the behaviour)
 Classes are analogous to abstract data types because a user of a class only sees the states and behaviour of a data item.
+-----------------
+1.8.1 Built-in Atomic Data types
+Python classes are called int and float.
+The boolean data type as Python bool class. 
+A boolean object are True and False with standard boolean operators, and, or and not. 
+Boolean data objects used as results for comparison operators.
+Relational operators and logical operators can be combined together to form complex logic control. 
+
+
 
