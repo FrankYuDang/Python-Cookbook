@@ -205,6 +205,107 @@ print('# Sequence can be tuple packing and sequence unpacking')
 a = {x for x in 'abracadabra' if x not in 'abc'}
 print(a)
 
+#-------------------------------------
+# 5.5. Dictionaries.
+# {key : value} pairs. Placing a comma-separated list of key:value pairs within
+#   the braces adds initial key : value pairs to the dictionary. 
+
+# Main operation on a dict. are stroing value with some key and extracting
+#   the value given the key.
+#   delete a pair with del.
+
+print('-'*40)
+print(' Dictionary ')
+tel = {'jack': 4098, 'sape':4139}
+tel['guido'] = 4127
+print('tel :', tel)
+
+print('Jack :', tel['jack'])
+tel['irv'] = 4127
+print('tel :', tel)
+print('list in tel :', list(tel))
+print('sorted tel :', sorted(tel))
+print('Ask if guido in tel :', 'guido' in tel)
+print('Ask if jack not in tel :', 'jack' not in tel)
+# another way to build dictionary.
+a = dict([('sape', 4139), ('guido', 7127), ('jack', 4098)])
+print('dict() builds dictionaries from sequences of key-value pairs :',a)
+
+# dict comprehension
+dict_comprehension = {x : x**2 for x in (2, 4, 6)}
+print('dict_comprehension :', dict_comprehension)
+
+# using = to assign value to keys.
+dict_string = dict(sape = 4139, guido = 4127, jack = 4098)
+print('dict_string :', dict_string)
+
+#---------------------------------------
+# Looping techniques.
+print('-'*40)
+print('*'*10,' Looping ', '*'*10)
+# loop in dictioanries. get the key and value using .items()
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k, v in knights.items():
+    print(k, v)
+
+# when looping through a sequence, the position index and value can be
+#   retrieved at the same time using the .enumerate() function
+
+for i, v in enumerate(['tic', 'tac', 'toe']):
+    print(i, v)
+
+# To loop over two or more sequences at the same time,
+#   the entries can be paired with the zip() function.
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q, a in zip(questions, answers):
+    print('what is your {0}? It is {1}.'.format(q, a))
+
+# To loop over a sequence in reverse, first specify the sequence in
+#   a forward direction and then call the reversed() function.
+for i in reversed(range(1, 10, 2)):
+    print(i)
+
+# To loop over a sequence in sorted order, use
+# the sorted() function which returns a new sorted list while leaving
+#   the source unaltered.
+# set() method convert any of iterable to the distinct element and
+#   sorted sequence of iterable elements.
+
+basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+for f in sorted(set(basket)):
+    print(f)
+    
+
+import math
+raw_data = [56.2, float('NaN'), 51.7, 55.3, 52.5, float('Nan'), 47.8]
+filtered_data = []
+for value in raw_data:
+    if not math.isnan(value):
+        filtered_data.append(value)
+
+print('filtered_data :', filtered_data)
+
+#---------------------------------------
+# More on Conditions
+print('-'*40)
+print('*'*10,' Conditions ', '*'*10)
+# is and is not, in and not in, check whether a value occurs in a sequece.
+# only matters for mutable objects like lists.
+
+
+#---------------------------------------
+# More on Conditions
+print('-'*40)
+print('*'*10,' Sequence ', '*'*10)
+# Sequence objects 
+
+
+
+
+
+
+
 
 
         
